@@ -4,6 +4,10 @@
 
 ### C++ Program to detect hand and count the number of fingers using computer vision
 
+## Demonstration
+
+<img alt="Demonstration of finger detection" src="hand.png">
+
 ## How it works
 
 First the hand is cropped into and pre-processed by converting the image to gray and blurring.
@@ -109,7 +113,3 @@ for (int j = 0; j < 4; j++)
     line(imgGray, rect_point[j], rect_point[(j + 1) % 4], Scalar(0, 255, 0), 2, 8);
 }
 ```
-
-## Demonstration
-
-<img alt="Demonstration of finger detection" src="hand.png">
